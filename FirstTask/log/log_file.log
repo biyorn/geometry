@@ -1,0 +1,16 @@
+2019-07-09 12:50:08 INFO  DataReader:23 - Reading from file
+2019-07-09 12:53:33 INFO  DataReader:23 - Reading from file
+2019-07-09 12:53:55 INFO  DataReader:23 - Reading from file
+2019-07-09 12:53:55 ERROR DataReader:34 - Exception at work with file
+2019-07-09 12:54:29 INFO  DataReader:23 - Reading from file
+2019-07-09 12:54:29 INFO  DataReader:23 - Reading from file
+2019-07-09 12:54:29 ERROR DataReader:34 - Exception at work with file
+2019-07-09 12:58:36 INFO  DataReader:23 - Reading from file
+2019-07-09 14:04:47 INFO  DataReader:23 - Reading from file
+2019-07-09 14:04:47 INFO  DataReader:23 - Reading from file
+2019-07-09 14:04:47 ERROR DataReader:34 - Exception at work with file
+2019-07-09 14:08:01 INFO  Validator:14 - Check string for compliance
+2019-07-09 14:08:01 INFO  Validator:14 - Check string for compliance
+2019-07-09 14:08:01 INFO  Validator:14 - Check string for compliance
+2019-07-09 14:08:01 INFO  Validator:14 - Check string for compliance
+2019-07-09 14:08:01 INFO  Validator:14 - Check string for compliance
