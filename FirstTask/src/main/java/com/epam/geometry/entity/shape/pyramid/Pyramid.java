@@ -23,7 +23,8 @@ public class Pyramid implements ShapeImpl {
     }
 
     public Point getPoint() {
-        return point;
+        Point temp = new Point(point);
+        return temp;
     }
 
     public void setPoint(Point point) {

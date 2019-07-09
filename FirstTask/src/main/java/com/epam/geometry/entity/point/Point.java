@@ -19,6 +19,12 @@ public class Point {
         this.z = z;
     }
 
+    public Point(Point point) {
+        this.x = point.x;
+        this.y = point.y;
+        this.z = point.z;
+    }
+
     public int getX() {
         return x;
     }
