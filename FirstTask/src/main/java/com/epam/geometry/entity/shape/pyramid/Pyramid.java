@@ -1,8 +1,9 @@
-package com.epam.geometry.entity.shape;
+package com.epam.geometry.entity.shape.pyramid;
 
 import com.epam.geometry.entity.point.Point;
+import com.epam.geometry.entity.shape.impl.ShapeImpl;
 
-public class Pyramid {
+public class Pyramid implements ShapeImpl {
 
     private Point point;
     private int height;
