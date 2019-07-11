@@ -1,4 +1,4 @@
-package com.epam.geometry.directory;
+package com.epam.geometry.director;
 
 import com.epam.geometry.creator.PyramidCreator;
 import com.epam.geometry.entity.shape.pyramid.Pyramid;
@@ -9,14 +9,14 @@ import com.epam.geometry.valid.impl.Validator;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Directory {
+public class Director {
 
     private DataReader reader;
     private Validator valid;
     private PyramidCreator creator;
     private static final String PATH = "data/text.txt";
 
-    public Directory(DataReader reader, Validator valid, PyramidCreator creator) {
+    public Director(DataReader reader, Validator valid, PyramidCreator creator) {
         this.reader = reader;
         this.valid = valid;
         this.creator = creator;
