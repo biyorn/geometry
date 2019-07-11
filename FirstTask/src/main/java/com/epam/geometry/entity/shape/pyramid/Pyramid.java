@@ -8,7 +8,7 @@ public class Pyramid {
     private double sideRibLength;
     private double baseEdgeLength;
 
-    public Pyramid(Point point, int sideRibLength, int baseEdgeLength) {
+    public Pyramid(Point point, double sideRibLength, double baseEdgeLength) {
         this.point = point;
         this.sideRibLength = sideRibLength;
         this.baseEdgeLength = baseEdgeLength;

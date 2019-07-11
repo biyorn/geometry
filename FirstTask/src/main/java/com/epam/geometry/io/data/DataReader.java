@@ -11,7 +11,7 @@ import java.util.List;
 
 public class DataReader {
 
-    private static final Logger log = Logger.getLogger(DataReader.class);
+    private static final Logger log = Logger.getLogger(DataReader.class.getName());
 
     public DataReader() {}
 

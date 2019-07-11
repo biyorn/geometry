@@ -11,7 +11,7 @@ public class DateValidatorTest {
         DateValidator validator = new DateValidator();
 
         // when
-        boolean result = validator.isValid("1 2 3 4 5");
+        boolean result = validator.isValid("122 2 3 422 5");
 
         // then
         Assert.assertTrue(result);

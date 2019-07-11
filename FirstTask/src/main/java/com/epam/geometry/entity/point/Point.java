@@ -2,25 +2,25 @@ package com.epam.geometry.entity.point;
 
 public class Point {
 
-    private int x;
-    private int y;
-    private int z;
+    private double x;
+    private double y;
+    private double z;
 
-    public Point(int x, int y, int z) {
+    public Point(double x, double y, double z) {
         this.x = x;
         this.y = y;
         this.z = z;
     }
 
-    public int getX() {
+    public double getX() {
         return x;
     }
 
-    public int getY() {
+    public double getY() {
         return y;
     }
 
-    public int getZ() {
+    public double getZ() {
         return z;
     }
 
@@ -38,10 +38,10 @@ public class Point {
 
     @Override
     public int hashCode() {
-        int result = 17;
+        double result = 17;
         result = 31 * result + x;
         result = 31 * result + y;
         result = 31 * result + z;
-        return result;
+        return (int) result;
     }
 }
