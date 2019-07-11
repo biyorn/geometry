@@ -1,6 +1,6 @@
 package com.epam.geometry.exception.file;
 
-public class FileNotReadException extends FileWorkException {
+public class FileNotReadException extends DataMissingException {
 
     public FileNotReadException() {
     }

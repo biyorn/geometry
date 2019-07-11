@@ -14,3 +14,36 @@
 2019-07-09 14:08:01 INFO  Validator:14 - Check string for compliance
 2019-07-09 14:08:01 INFO  Validator:14 - Check string for compliance
 2019-07-09 14:08:01 INFO  Validator:14 - Check string for compliance
+2019-07-11 13:07:23 INFO  DataReader:24 - Reading from file
+2019-07-11 13:07:56 INFO  DataReader:24 - Reading from file
+2019-07-11 13:08:06 ERROR DataReader:21 - Exception, the path to file is null
+2019-07-11 15:55:45 INFO  DataReader:24 - Reading from file
+2019-07-11 16:00:37 INFO  DataReader:24 - Reading from file
+2019-07-11 16:04:03 INFO  DataReader:24 - Reading from file
+2019-07-11 16:04:03 INFO  DataReader:24 - Reading from file
+2019-07-11 16:04:03 ERROR DataReader:21 - Exception, the path to file is null
+2019-07-11 16:07:40 INFO  DataReader:24 - Reading from file
+2019-07-11 16:07:40 INFO  DataReader:24 - Reading from file
+2019-07-11 16:07:40 ERROR DataReader:21 - Exception, the path to file is null
+2019-07-11 16:07:57 INFO  DataReader:24 - Reading from file
+2019-07-11 16:07:57 INFO  DataReader:24 - Reading from file
+2019-07-11 16:07:57 ERROR DataReader:21 - Exception, the path to file is null
+2019-07-11 16:08:05 INFO  DataReader:24 - Reading from file
+2019-07-11 16:08:05 INFO  DataReader:24 - Reading from file
+2019-07-11 16:08:05 ERROR DataReader:21 - Exception, the path to file is null
+2019-07-11 16:08:41 INFO  DataReader:24 - Reading from file
+2019-07-11 16:08:41 INFO  DataReader:24 - Reading from file
+2019-07-11 16:08:41 ERROR DataReader:21 - Exception, the path to file is null
+2019-07-11 16:08:41 INFO  DataReader:24 - Reading from file
+2019-07-11 16:08:41 INFO  DataReader:24 - Reading from file
+2019-07-11 16:08:41 ERROR DataReader:21 - Exception, the path to file is null
+2019-07-11 16:09:11 INFO  DateValidator:14 - Check string for compliance
+2019-07-11 16:09:11 INFO  DateValidator:14 - Check string for compliance
+2019-07-11 16:09:11 INFO  DateValidator:14 - Check string for compliance
+2019-07-11 16:09:11 INFO  DateValidator:14 - Check string for compliance
+2019-07-11 16:09:11 INFO  DateValidator:14 - Check string for compliance
+2019-07-11 16:09:34 INFO  DateValidator:14 - Check string for compliance
+2019-07-11 16:09:34 INFO  DateValidator:14 - Check string for compliance
+2019-07-11 16:09:34 INFO  DateValidator:14 - Check string for compliance
+2019-07-11 16:09:34 INFO  DateValidator:14 - Check string for compliance
+2019-07-11 16:09:34 INFO  DateValidator:14 - Check string for compliance

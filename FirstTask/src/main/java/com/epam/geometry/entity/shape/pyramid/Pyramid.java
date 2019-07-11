@@ -1,59 +1,38 @@
 package com.epam.geometry.entity.shape.pyramid;
 
 import com.epam.geometry.entity.point.Point;
-import com.epam.geometry.entity.shape.impl.ShapeImpl;
 
-public class Pyramid implements ShapeImpl {
+public class Pyramid {
 
     private Point point;
-    private int height;
-    private int lengthEdge;
-    private static final int INITIAL_VALUE = 10;
+    private double sideRibLength;
+    private double baseEdgeLength;
 
-    public Pyramid() {
-        this.point = new Point();
-        this.height = INITIAL_VALUE;
-        this.lengthEdge = INITIAL_VALUE;
-    }
-
-    public Pyramid(Point point, int height, int lengthEdge) {
+    public Pyramid(Point point, int sideRibLength, int baseEdgeLength) {
         this.point = point;
-        this.height = height;
-        this.lengthEdge = lengthEdge;
+        this.sideRibLength = sideRibLength;
+        this.baseEdgeLength = baseEdgeLength;
     }
 
     public Point getPoint() {
-        Point temp = new Point(point);
-        return temp;
+        return point;
     }
 
-    public void setPoint(Point point) {
-        this.point = point;
+    public double getSideRibLength() {
+        return sideRibLength;
     }
 
-    public int getHeight() {
-        return height;
-    }
-
-    public void setHeight(int height) {
-        this.height = height;
-    }
-
-    public int getLengthEdge() {
-        return lengthEdge;
-    }
-
-    public void setLengthEdge(int lengthEdge) {
-        this.lengthEdge = lengthEdge;
+    public double getBaseEdgeLength() {
+        return baseEdgeLength;
     }
 
     @Override
     public int hashCode() {
-        int result = 17;
+        double result = 17;
         result = 31 * result + point.hashCode();
-        result = 31 * result + height;
-        result = 31 * result + lengthEdge;
-        return result;
+        result = 31 * result + sideRibLength;
+        result = 31 * result + baseEdgeLength;
+        return (int) result;
     }
 
     @Override
@@ -66,7 +45,7 @@ public class Pyramid implements ShapeImpl {
         }
         Pyramid other = (Pyramid) obj;
         return point.equals(other.point) &&
-                height == other.height &&
-                lengthEdge == other.lengthEdge;
+                sideRibLength == other.sideRibLength &&
+                baseEdgeLength == other.baseEdgeLength;
     }
 }
