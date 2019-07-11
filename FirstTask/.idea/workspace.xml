@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="517a75fb-3677-43ff-89e5-7b348b115845" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/epam/geometry/creator/PyramidCreatorTest.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/target/classes/com/epam/geometry/action/impl/ShapeLogic.class" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/target/classes/com/epam/geometry/action/pyramid/PyramidLogic.class" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/target/classes/com/epam/geometry/creator/PyramidCreator.class" afterDir="false" />
@@ -18,15 +17,6 @@
       <change afterPath="$PROJECT_DIR$/target/test-classes/com/epam/geometry/io/data/DataReaderTest.class" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/target/test-classes/com/epam/geometry/valid/DateValidatorTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/log_file.log" beforeDir="false" afterPath="$PROJECT_DIR$/log/log_file.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/epam/geometry/action/pyramid/PyramidLogic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/epam/geometry/action/pyramid/PyramidLogic.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/epam/geometry/creator/PyramidCreator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/epam/geometry/creator/PyramidCreator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/epam/geometry/directory/Directory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/epam/geometry/directory/Directory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/epam/geometry/entity/point/Point.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/epam/geometry/entity/point/Point.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/epam/geometry/entity/shape/pyramid/Pyramid.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/epam/geometry/entity/shape/pyramid/Pyramid.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/epam/geometry/io/data/DataReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/epam/geometry/io/data/DataReader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/epam/geometry/valid/DateValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/epam/geometry/valid/DateValidator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/epam/geometry/valid/DateValidatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/epam/geometry/valid/DateValidatorTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -397,6 +387,14 @@
               <item name="geometry" type="462c0819:PsiDirectoryNode" />
               <item name="valid" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="FirstTask" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FirstTask" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -544,7 +542,7 @@
       <workItem from="1562665496366" duration="949000" />
       <workItem from="1562666644616" duration="11675000" />
       <workItem from="1562755440238" duration="583000" />
-      <workItem from="1562838971977" duration="11895000" />
+      <workItem from="1562838971977" duration="12144000" />
     </task>
     <task id="LOCAL-00001" summary="*">
       <created>1562488760847</created>
@@ -595,7 +593,14 @@
       <option name="project" value="LOCAL" />
       <updated>1562850614907</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="*">
+      <created>1562854503735</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1562854503735</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -631,11 +636,10 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="37395000" />
+    <option name="totallyTimeSpent" value="37644000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="916" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26542416" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
