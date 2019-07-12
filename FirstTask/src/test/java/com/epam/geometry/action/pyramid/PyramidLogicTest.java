@@ -15,7 +15,6 @@ public class PyramidLogicTest {
     private PyramidLogic logic;
     private Pyramid mockPyramid;
 
-
     @Before
     public void init() {
         logic = new PyramidLogic();

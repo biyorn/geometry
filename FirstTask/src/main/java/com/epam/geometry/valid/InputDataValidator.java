@@ -4,9 +4,9 @@ import com.epam.geometry.valid.impl.Validator;
 import org.apache.log4j.Logger;
 
 
-public class DateValidator implements Validator {
+public class InputDataValidator implements Validator {
 
-    private static final Logger log = Logger.getLogger(DateValidator.class.getName());
+    private static final Logger log = Logger.getLogger(InputDataValidator.class.getName());
     private static final String REGEX = "(\\d+\\s?){5}";
 
     @Override

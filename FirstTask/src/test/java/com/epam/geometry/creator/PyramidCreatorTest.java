@@ -1,6 +1,7 @@
 package com.epam.geometry.creator;
 
 import com.epam.geometry.entity.shape.pyramid.Pyramid;
+import com.epam.geometry.exception.file.DataMissingException;
 import org.junit.Test;
 
 public class PyramidCreatorTest {
@@ -11,7 +12,7 @@ public class PyramidCreatorTest {
         PyramidCreator creator = new PyramidCreator();
 
         // when
-        Pyramid pyramid = creator.createNewPyramid("");
+
 
         // then
 

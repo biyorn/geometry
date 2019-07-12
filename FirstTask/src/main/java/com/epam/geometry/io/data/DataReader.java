@@ -13,12 +13,10 @@ public class DataReader {
 
     private static final Logger log = Logger.getLogger(DataReader.class.getName());
 
-    public DataReader() {}
-
     public List<String> read(String path) throws DataMissingException {
         File file = new File(path);
         if(!file.exists()) {
-            log.error("Exception, the path to file is null");
+            log.error("Error, the path to file is null");
             throw new PathToFileIsWrongException("Path is wrong");
         }
         log.info("Reading from file");
@@ -32,7 +30,7 @@ public class DataReader {
                 list.add(line);
             }
         } catch(IOException e) {
-            log.error("Exception at work with file");
+            log.error("Error at work with file");
             throw new FileNotReadException("");
         }
 

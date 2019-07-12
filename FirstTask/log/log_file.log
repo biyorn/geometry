@@ -174,3 +174,22 @@
 2019-07-11 16:56:49 INFO  DateValidator:15 - Check string for compliance
 2019-07-11 16:56:49 INFO  DateValidator:15 - Check string for compliance
 2019-07-11 16:56:49 INFO  DateValidator:15 - Check string for compliance
+2019-07-12 18:46:14 INFO  InputDataValidator:14 - Check string for compliance
+2019-07-12 18:46:14 INFO  InputDataValidator:14 - Check string for compliance
+2019-07-12 18:46:14 INFO  InputDataValidator:14 - Check string for compliance
+2019-07-12 18:46:14 INFO  InputDataValidator:14 - Check string for compliance
+2019-07-12 18:46:14 INFO  InputDataValidator:14 - Check string for compliance
+2019-07-12 18:46:29 INFO  PyramidLogic:15 - 
+2019-07-12 18:46:29 ERROR PyramidLogic:17 - 
+2019-07-12 18:46:29 INFO  PyramidLogic:29 - 
+2019-07-12 18:46:29 INFO  PyramidLogic:48 - 
+2019-07-12 18:46:29 INFO  PyramidLogic:41 - 
+2019-07-12 18:46:29 INFO  PyramidLogic:54 - 
+2019-07-12 18:46:29 INFO  PyramidLogic:29 - 
+2019-07-12 18:46:29 ERROR PyramidLogic:31 - 
+2019-07-12 18:46:29 INFO  PyramidLogic:15 - 
+2019-07-12 18:46:29 INFO  PyramidLogic:54 - 
+2019-07-12 18:46:29 INFO  PyramidLogic:59 - 
+2019-07-12 18:46:39 INFO  DataReader:24 - Reading from file
+2019-07-12 18:46:39 INFO  DataReader:24 - Reading from file
+2019-07-12 18:46:39 ERROR DataReader:21 - Exception, the path to file is null
