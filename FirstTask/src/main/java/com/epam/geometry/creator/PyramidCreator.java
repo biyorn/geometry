@@ -12,7 +12,7 @@ public class PyramidCreator {
     private static final int LENGTH_EDGE = 4;
 
     public Pyramid createNewPyramid(String line) {
-        String[] options = line.split("\\s");
+        String[] options = line.split("\\s+");
         double x = Double.parseDouble(options[LOCATION_X]);
         double y = Double.parseDouble(options[LOCATION_Y]);
         double z = Double.parseDouble(options[LOCATION_Z]);

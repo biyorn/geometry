@@ -27,8 +27,7 @@ public class DataReader {
                 list.add(line);
             }
         } catch(IOException e) {
-            LOGGER.error("Error at work with file");
-            throw new FileNotReadException("");
+            throw new FileNotReadException(e.getMessage(), e);
         }
 
         return list;

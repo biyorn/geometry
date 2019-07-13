@@ -10,7 +10,6 @@ import org.apache.log4j.Logger;
 import java.util.ArrayList;
 import java.util.List;
 
-
 public class Director {
 
     private static final Logger LOGGER = Logger.getLogger(Director.class);
