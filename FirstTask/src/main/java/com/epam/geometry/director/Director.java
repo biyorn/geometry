@@ -5,11 +5,15 @@ import com.epam.geometry.entity.shape.pyramid.Pyramid;
 import com.epam.geometry.exception.file.DataMissingException;
 import com.epam.geometry.io.DataReader;
 import com.epam.geometry.valid.impl.Validator;
+import org.apache.log4j.Logger;
 
 import java.util.ArrayList;
 import java.util.List;
 
+
 public class Director {
+
+    private static final Logger LOGGER = Logger.getLogger(Director.class);
 
     private DataReader reader;
     private Validator valid;
@@ -34,7 +38,7 @@ public class Director {
                 }
             }
         } catch (DataMissingException e) {
-
+            LOGGER.error(e.getMessage(), e);
         }
 
     }

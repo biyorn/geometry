@@ -15,7 +15,7 @@ public class InputDataValidatorTest {
     }
 
     @Test
-    public void readTestMethodShouldReturnTrueWhenNumbersFive() {
+    public void testReadShouldReturnTrueWhenNumbersFive() {
         // when
         boolean actual = validator.isValid("122 2 3 422 5");
 
@@ -24,7 +24,7 @@ public class InputDataValidatorTest {
     }
 
     @Test
-    public void readTestMethodShouldReturnFalseWhenAmountNumbersLessThanFive() {
+    public void testReadShouldReturnFalseWhenAmountNumbersLessThanFive() {
         // when
         boolean result = validator.isValid("1 2 3 4");
 
@@ -33,7 +33,7 @@ public class InputDataValidatorTest {
     }
 
     @Test
-    public void readTestMethodShouldReturnFalseWhenAmountNumbersMoreThanFive() {
+    public void testReadShouldReturnFalseWhenAmountNumbersMoreThanFive() {
         // when
         boolean result = validator.isValid("1 2 3 4 5 6");
 
@@ -42,7 +42,7 @@ public class InputDataValidatorTest {
     }
 
     @Test
-    public void readTestMethodShouldReturnFalseWhenStringContainLetter() {
+    public void testReadShouldReturnFalseWhenStringContainLetter() {
         // when
         boolean result = validator.isValid("11z 23 4 5 6");
 
@@ -51,11 +51,11 @@ public class InputDataValidatorTest {
     }
 
     @Test
-    public void readTestMethodShouldReturnFalseWhenNumberIsNegative() {
+    public void testReadShouldReturnTrueWhenNumbersNegative() {
         // when
-        boolean result = validator.isValid("-1 2 3 4 5");
+        boolean result = validator.isValid("-1 2 3 -4 5");
 
         // then
-        Assert.assertFalse(result);
+        Assert.assertTrue(result);
     }
 }
