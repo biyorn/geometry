@@ -15,7 +15,7 @@ public class InputDataValidatorTest {
     }
 
     @Test
-    public void readTestMethodShouldReturnTrueWhenAmountNumbersFive() {
+    public void readTestMethodShouldReturnTrueWhenNumbersFive() {
         // when
         boolean actual = validator.isValid("122 2 3 422 5");
 

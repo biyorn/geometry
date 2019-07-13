@@ -1,6 +1,7 @@
-package com.epam.geometry.io.data;
+package com.epam.geometry.io;
 
 import com.epam.geometry.exception.file.DataMissingException;
+import com.epam.geometry.io.DataReader;
 import org.hamcrest.MatcherAssert;
 import org.junit.Before;
 import org.junit.Test;
@@ -9,6 +10,7 @@ import java.util.Arrays;
 import java.util.List;
 
 import static org.hamcrest.CoreMatchers.is;
+import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.collection.IsCollectionWithSize.hasSize;
 
 public class DataReaderTest {
@@ -16,8 +18,14 @@ public class DataReaderTest {
     private static final String PATH = "src/test/java/resources/data/test.txt";
     private static final String WRONG_PATH = "src/test/java/resources/data/wrongPath.txt";
     private DataReader reader;
-    private static final List<String> EXPECTED_LIST = Arrays.asList("1 2 3 4 5", "4 2 1 2 4", "4 423v 32  52",
-                                                                    "5 2 41 1 2", "41 fx 4/", "4324/ 42 434 34");
+    private static final List<String> EXPECTED_LIST = Arrays.asList(
+            "1 2 3 4 5",
+            "4 2 1 2 4",
+            "4 423v 32  52",
+            "5 2 41 1 2",
+            "41 fx 4/",
+            "4324/ 42 434 34"
+    );
 
     @Before
     public void init() {
@@ -30,7 +38,7 @@ public class DataReaderTest {
         List<String> actual = reader.read(PATH);
 
         // then
-        MatcherAssert.assertThat(actual, hasSize(6));
+        assertThat(actual, hasSize(6));
     }
 
     @Test
@@ -38,7 +46,7 @@ public class DataReaderTest {
         // when
         List<String> actualList = reader.read(PATH);
 
-        MatcherAssert.assertThat(actualList, is(EXPECTED_LIST));
+        assertThat(actualList, is(EXPECTED_LIST));
     }
 
     @Test(expected = DataMissingException.class)

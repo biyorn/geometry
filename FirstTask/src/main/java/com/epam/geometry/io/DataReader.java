@@ -1,4 +1,4 @@
-package com.epam.geometry.io.data;
+package com.epam.geometry.io;
 
 import com.epam.geometry.exception.file.PathToFileIsWrongException;
 import com.epam.geometry.exception.file.FileNotReadException;
@@ -11,26 +11,23 @@ import java.util.List;
 
 public class DataReader {
 
-    private static final Logger log = Logger.getLogger(DataReader.class.getName());
+    private static final Logger LOGGER = Logger.getLogger(DataReader.class);
 
     public List<String> read(String path) throws DataMissingException {
         File file = new File(path);
         if(!file.exists()) {
-            log.error("Error, the path to file is null");
+            LOGGER.error("Error, the path to file is null");
             throw new PathToFileIsWrongException("Path is wrong");
         }
-        log.info("Reading from file");
         List<String> list = new ArrayList<>();
 
-        try(FileReader input = new FileReader(path);
-            BufferedReader buffer = new BufferedReader(input)) {
-
+        try(BufferedReader buffer = new BufferedReader(new FileReader(file))) {
             String line;
             while((line = buffer.readLine()) != null) {
                 list.add(line);
             }
         } catch(IOException e) {
-            log.error("Error at work with file");
+            LOGGER.error("Error at work with file");
             throw new FileNotReadException("");
         }
 
