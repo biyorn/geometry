@@ -36,8 +36,8 @@ public class Director {
             invalidList = reader.read(path);
             for (String line : invalidList) {
                 if(valid.isValid(line)) {
-                    List<Double> list = parser.parser(line);
-                    Pyramid pyramid = creator.createNewPyramid(list);
+                   // List<Double> list = parser.parser(line);
+                    Pyramid pyramid = creator.createPyramid(line);
                     validList.add(pyramid);
                 }
             }
