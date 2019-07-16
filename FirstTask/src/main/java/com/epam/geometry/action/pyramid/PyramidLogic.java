@@ -4,6 +4,10 @@ import com.epam.geometry.entity.point.Point;
 import com.epam.geometry.entity.shape.pyramid.Pyramid;
 import com.epam.geometry.action.impl.ShapeLogic;
 
+import java.nio.channels.Pipe;
+import java.security.PublicKey;
+import java.util.Objects;
+
 public class PyramidLogic implements ShapeLogic {
 
     private static final int FOUR_SIDED_PYRAMID = 4;
@@ -45,6 +49,15 @@ public class PyramidLogic implements ShapeLogic {
         double secondPart = calculateVolume(pyramid) - firstPart;
 
         return firstPart / secondPart;
+    }
+
+    // may be incorrect
+    public boolean isPyramid(Object obj) {
+        Pyramid pyramid = new Pyramid(new Point(0, 0, 0), 10, 10);
+        if(pyramid == obj) {
+            return true;
+        }
+        return obj != null && pyramid.getClass() == obj.getClass();
     }
 
     private double calculateSimilarityCoefficient(Pyramid pyramid, Point point, double coordinatePointY) {
