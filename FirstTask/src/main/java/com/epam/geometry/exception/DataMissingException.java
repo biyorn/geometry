@@ -1,4 +1,4 @@
-package com.epam.geometry.exception.file;
+package com.epam.geometry.exception;
 
 public class DataMissingException extends Exception {
 

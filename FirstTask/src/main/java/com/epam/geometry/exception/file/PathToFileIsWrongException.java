@@ -1,5 +1,7 @@
 package com.epam.geometry.exception.file;
 
+import com.epam.geometry.exception.DataMissingException;
+
 public class PathToFileIsWrongException extends DataMissingException {
 
     public PathToFileIsWrongException() {

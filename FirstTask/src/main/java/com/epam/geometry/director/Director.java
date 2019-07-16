@@ -2,7 +2,7 @@ package com.epam.geometry.director;
 
 import com.epam.geometry.creator.PyramidCreator;
 import com.epam.geometry.entity.shape.pyramid.Pyramid;
-import com.epam.geometry.exception.file.DataMissingException;
+import com.epam.geometry.exception.DataMissingException;
 import com.epam.geometry.exception.parameters.ParametersNotValidException;
 import com.epam.geometry.io.DataReader;
 import com.epam.geometry.valid.ParserPyramidParameters;
@@ -36,15 +36,12 @@ public class Director {
             invalidList = reader.read(path);
             for (String line : invalidList) {
                 if(valid.isValid(line)) {
-                   // List<Double> list = parser.parser(line);
                     Pyramid pyramid = creator.createPyramid(line);
                     validList.add(pyramid);
                 }
             }
-        } catch (DataMissingException | ParametersNotValidException e) {
+        } catch (DataMissingException e) {
             LOGGER.error(e.getMessage(), e);
         }
-
     }
-
 }

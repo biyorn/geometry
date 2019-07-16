@@ -11,6 +11,8 @@ public class PyramidLogicTest {
     private static final double DELTA = 0.001;
     private static final double EXPECTED_SQUARE = 273.205;
     private static final double EXPECTED_VOLUME = 235.702;
+    private static final double EXPECTED_RATIO = 0.221;
+    private static final double TARGET_COORDINATE = 5;
     private PyramidLogic logic;
     private Point point;
     private Pyramid pyramid;
@@ -39,5 +41,14 @@ public class PyramidLogicTest {
         // then
         Assert.assertEquals(EXPECTED_VOLUME, actual, DELTA);
 
+    }
+
+    @Test
+    public void testCalculateRationVolumeShouldReturnExpectedRatio() {
+        // when
+        double actual = logic.calculateRatioVolume(pyramid, TARGET_COORDINATE);
+
+        // then
+        Assert.assertEquals(EXPECTED_RATIO, actual, DELTA);
     }
 }

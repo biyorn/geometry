@@ -1,5 +1,6 @@
 package com.epam.geometry.action.pyramid;
 
+import com.epam.geometry.entity.point.Point;
 import com.epam.geometry.entity.shape.pyramid.Pyramid;
 import com.epam.geometry.action.impl.ShapeLogic;
 
@@ -13,9 +14,8 @@ public class PyramidLogic implements ShapeLogic {
         double sideRibLength = pyramid.getSideRibLength();
         double baseSquare = calculateQuadrateSquare(baseEdgeLength);
         double sideSquare = calculateTriangleSquare(baseEdgeLength, sideRibLength);
-        double square = baseSquare + FOUR_SIDED_PYRAMID * sideSquare;
 
-        return square;
+        return baseSquare + FOUR_SIDED_PYRAMID * sideSquare;
     }
 
     @Override
@@ -27,8 +27,50 @@ public class PyramidLogic implements ShapeLogic {
         double height = calculateHeight(sideRibLength, halfBaseDiagonal);
         double quadrateSquare = calculateQuadrateSquare(baseEdgeLength);
 
-        double volume = (height * quadrateSquare) / 3;
-        return volume;
+        return (height * quadrateSquare) / 3;
+    }
+
+    @Override
+    public double calculateRatioVolume(Pyramid pyramid, double coordinatePointY) {
+        // Check is possible
+        Point point = pyramid.getPoint();
+        double z = point.getZ();
+        double x = point.getX();
+        Point pointTruncatedPyramid = new Point(x, coordinatePointY, z);
+
+        double coefficient = calculateSimilarityCoefficient(pyramid, point, coordinatePointY);
+
+        Pyramid truncatedPyramid = createTruncatedPyramid(pyramid, pointTruncatedPyramid, coefficient);
+        double firstPart = calculateVolume(truncatedPyramid);
+        double secondPart = calculateVolume(pyramid) - firstPart;
+
+        return firstPart / secondPart;
+    }
+
+    private double calculateSimilarityCoefficient(Pyramid pyramid, Point point, double coordinatePointY) {
+        double startingPoint = point.getY();
+        double endPoint = calculateEndPoint(pyramid, startingPoint);
+
+        double intermediateSection = endPoint - startingPoint;
+        double cutSection = coordinatePointY - startingPoint;
+
+        return intermediateSection / cutSection;
+    }
+
+    private Pyramid createTruncatedPyramid(Pyramid pyramid, Point newPoint, double similarityCoefficient) {
+        double sideRibLength = pyramid.getSideRibLength() / similarityCoefficient;
+        double baseEdgeLength = pyramid.getBaseEdgeLength() / similarityCoefficient;
+
+        return new Pyramid(newPoint, sideRibLength, baseEdgeLength);
+    }
+
+    private double calculateEndPoint(Pyramid pyramid, double startingPoint) {
+        double baseEdgeLength = pyramid.getBaseEdgeLength();
+        double halfDiagonal = calculateHalfDiagonalQuadrate(baseEdgeLength);
+        double sideRibLength = pyramid.getSideRibLength();
+        double height = calculateHeight(sideRibLength, halfDiagonal);
+
+        return startingPoint + height;
     }
 
     private double calculateHeight(double sideRibLength, double halfDiagonal) {
@@ -48,7 +90,6 @@ public class PyramidLogic implements ShapeLogic {
 
     private double calculateTriangleSquare(double base, double side) {
         double part = Math.pow(base, 2) - (Math.pow(side, 2) / 4);
-        double result = (base * Math.sqrt(part)) / 2;
-        return result;
+        return (base * Math.sqrt(part)) / 2;
     }
 }

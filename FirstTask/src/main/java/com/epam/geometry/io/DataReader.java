@@ -2,7 +2,7 @@ package com.epam.geometry.io;
 
 import com.epam.geometry.exception.file.PathToFileIsWrongException;
 import com.epam.geometry.exception.file.FileNotReadException;
-import com.epam.geometry.exception.file.DataMissingException;
+import com.epam.geometry.exception.DataMissingException;
 import org.apache.log4j.Logger;
 
 import java.io.*;

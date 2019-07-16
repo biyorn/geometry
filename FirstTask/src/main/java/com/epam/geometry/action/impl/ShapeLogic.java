@@ -6,5 +6,6 @@ public interface ShapeLogic {
 
     double calculateSquare(Pyramid pyramid);
     double calculateVolume(Pyramid pyramid);
+    double calculateRatioVolume(Pyramid pyramid, double coordinatePointY);
 
 }

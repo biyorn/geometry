@@ -1,6 +1,8 @@
 package com.epam.geometry.exception.parameters;
 
-public class ParametersNotValidException extends Exception {
+import com.epam.geometry.exception.DataMissingException;
+
+public class ParametersNotValidException extends DataMissingException {
 
     public ParametersNotValidException() {
     }

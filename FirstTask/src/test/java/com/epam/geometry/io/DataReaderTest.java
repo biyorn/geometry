@@ -1,8 +1,6 @@
 package com.epam.geometry.io;
 
-import com.epam.geometry.exception.file.DataMissingException;
-import com.epam.geometry.io.DataReader;
-import org.hamcrest.MatcherAssert;
+import com.epam.geometry.exception.DataMissingException;
 import org.junit.Before;
 import org.junit.Test;
 
