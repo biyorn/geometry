@@ -14,14 +14,16 @@ public class PyramidLogicTest {
     private static final double EXPECTED_RATIO = 0.221;
     private static final double TARGET_COORDINATE = 5;
     private PyramidLogic logic;
-    private Point point;
     private Pyramid pyramid;
+    private Pyramid pyramidForCoordinateTest;
 
     @Before
     public void init() {
         logic = new PyramidLogic();
-        point = new Point(1, 1, 1);
+        Point point = new Point(1, 1, 1);
         pyramid = new Pyramid(point, 10, 10);
+        Point pointForCoordinateTest = new Point(0, 0, 0);
+        pyramidForCoordinateTest = new Pyramid(pointForCoordinateTest, 5, 5);
     }
 
     @Test
@@ -50,5 +52,32 @@ public class PyramidLogicTest {
 
         // then
         Assert.assertEquals(EXPECTED_RATIO, actual, DELTA);
+    }
+
+    @Test
+    public void testBeOnCoordinatePlaneShouldReturnTrueWhenCoordinateX() {
+        // when
+        boolean actual = logic.beOnCoordinatePlane(pyramidForCoordinateTest, 'X');
+
+        // then
+        Assert.assertTrue(actual);
+    }
+
+    @Test
+    public void testBeOnCoordinatePlaneShouldReturnTrueWhenCoordinateY() {
+        // when
+        boolean actual = logic.beOnCoordinatePlane(pyramidForCoordinateTest, 'Y');
+
+        // then
+        Assert.assertTrue(actual);
+    }
+
+    @Test
+    public void testBeOnCoordinatePlaneShouldReturnTrueWhenCoordinateZ() {
+        // when
+        boolean actual = logic.beOnCoordinatePlane(pyramidForCoordinateTest, 'Z');
+
+        // then
+        Assert.assertTrue(actual);
     }
 }

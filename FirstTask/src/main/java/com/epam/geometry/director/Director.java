@@ -33,8 +33,8 @@ public class Director {
             invalidList = reader.read(path);
             for (String line : invalidList) {
                 if(valid.isValid(line)) {
-                    Pyramid pyramid = creator.createPyramid(line);
-                    validList.add(pyramid);
+                    //Pyramid pyramid = creator.createPyramid(line);
+                    //validList.add(pyramid);
                 }
             }
         } catch (DataMissingException e) {

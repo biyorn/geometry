@@ -1,13 +1,12 @@
 package com.epam.geometry.valid;
 
-import com.epam.geometry.valid.impl.Validator;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
 public class InputDataValidatorTest {
 
-    private Validator validator;
+    private InputDataValidator validator;
 
     @Before
     public void init() {

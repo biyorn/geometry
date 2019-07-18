@@ -2,8 +2,9 @@ package com.epam.geometry.creator;
 
 import com.epam.geometry.entity.point.Point;
 import com.epam.geometry.entity.shape.pyramid.Pyramid;
-import com.epam.geometry.exception.parameters.ParametersNotValidException;
 import com.epam.geometry.valid.ParametersPyramidValidator;
+
+import java.util.Optional;
 
 public class PyramidCreator {
 
@@ -14,23 +15,22 @@ public class PyramidCreator {
     private static final int LENGTH_EDGE = 4;
     private static final String SEPARATION = "\\s";
 
-    public Pyramid createPyramid(String line) throws ParametersNotValidException {
+    public Optional<Pyramid> createPyramid(String line) {
         String[] options = line.split(SEPARATION);
         double x = Double.parseDouble(options[LOCATION_X]);
         double y = Double.parseDouble(options[LOCATION_Y]);
         double z = Double.parseDouble(options[LOCATION_Z]);
         Point point = new Point(x, y, z);
 
-        double sideRibLength = Double.parseDouble(options[LENGTH_RIB]);
-        double baseEdgeLength = Double.parseDouble(options[LENGTH_EDGE]);
+        double sideRib = Double.parseDouble(options[LENGTH_RIB]);
+        double baseEdge = Double.parseDouble(options[LENGTH_EDGE]);
 
-        Pyramid pyramid;
+        Optional<Pyramid> pyramid;
         ParametersPyramidValidator validator = new ParametersPyramidValidator();
-        if(validator.isPyramid(sideRibLength, baseEdgeLength)) {
-            pyramid = new Pyramid(point, sideRibLength, baseEdgeLength);
+        if(validator.isPyramid(sideRib, baseEdge)) {
+            pyramid = Optional.of(new Pyramid(point, sideRib, baseEdge));
         } else {
-            // optional instead exception
-            throw new ParametersNotValidException();
+            pyramid = Optional.empty();
         }
 
         return pyramid;

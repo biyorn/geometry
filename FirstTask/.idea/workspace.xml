@@ -1,14 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="517a75fb-3677-43ff-89e5-7b348b115845" name="Default Changelist" comment="*">
+    <list default="true" id="517a75fb-3677-43ff-89e5-7b348b115845" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/epam/geometry/action/pyramid/PyramidLogic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/epam/geometry/action/pyramid/PyramidLogic.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/epam/geometry/creator/PyramidCreator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/epam/geometry/creator/PyramidCreator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/epam/geometry/director/Director.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/epam/geometry/director/Director.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/epam/geometry/entity/point/Point.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/epam/geometry/entity/point/Point.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/epam/geometry/entity/shape/pyramid/Pyramid.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/epam/geometry/entity/shape/pyramid/Pyramid.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/epam/geometry/valid/InputDataValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/epam/geometry/valid/InputDataValidator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/epam/geometry/exception/parameters/ParametersNotValidException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/epam/geometry/action/pyramid/PyramidLogicTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/epam/geometry/action/pyramid/PyramidLogicTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/epam/geometry/creator/PyramidCreatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/epam/geometry/creator/PyramidCreatorTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/epam/geometry/director/DirectorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/epam/geometry/director/DirectorTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/epam/geometry/valid/InputDataValidatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/epam/geometry/valid/InputDataValidatorTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/epam/geometry/action/impl/ShapeLogic.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/epam/geometry/action/pyramid/PyramidLogic.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/epam/geometry/action/pyramid/PyramidLogic.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/epam/geometry/creator/PyramidCreator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/epam/geometry/creator/PyramidCreator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/epam/geometry/director/Director.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/epam/geometry/director/Director.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/epam/geometry/entity/point/Point.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/epam/geometry/entity/point/Point.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/epam/geometry/entity/shape/pyramid/Pyramid.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/epam/geometry/entity/shape/pyramid/Pyramid.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/epam/geometry/exception/file/DataMissingException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/epam/geometry/exception/file/FileNotReadException.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/epam/geometry/exception/file/FileNotReadException.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/epam/geometry/exception/file/PathToFileIsWrongException.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/epam/geometry/exception/file/PathToFileIsWrongException.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/epam/geometry/io/DataReader.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/epam/geometry/io/DataReader.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/epam/geometry/valid/InputDataValidator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/epam/geometry/valid/InputDataValidator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/epam/geometry/valid/impl/Validator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/epam/geometry/action/pyramid/PyramidLogicTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/epam/geometry/action/pyramid/PyramidLogicTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/epam/geometry/creator/PyramidCreatorTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/epam/geometry/creator/PyramidCreatorTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/epam/geometry/io/DataReaderTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/epam/geometry/io/DataReaderTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/epam/geometry/valid/InputDataValidatorTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/epam/geometry/valid/InputDataValidatorTest.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -37,11 +56,36 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="122">
-              <caret line="17" column="32" selection-start-line="17" selection-start-column="32" selection-end-line="17" selection-end-column="32" />
+            <state relative-caret-position="513">
+              <caret line="40" column="21" selection-start-line="40" selection-start-column="21" selection-end-line="40" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/epam/geometry/action/pyramid/PyramidLogic.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="429">
+              <caret line="57" column="24" selection-start-line="57" selection-start-column="24" selection-end-line="57" selection-end-column="24" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#3996#3997#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/epam/geometry/action/pyramid/PyramidLogicTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="582">
+              <caret line="80" column="32" selection-start-line="80" selection-start-column="32" selection-end-line="80" selection-end-column="32" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -81,7 +125,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/epam/geometry/util/action/pyramid/PyramidLogic.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/epam/geometry/util/action/LogicShape.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/epam/geometry/exception/shape/ShapeDoesNotExistException.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/test/java/resources/data/test.txt" />
         <option value="$PROJECT_DIR$/src/test/java/com/epam/geometry/valid/ValidatorTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/epam/geometry/valid/DateValidator.java" />
@@ -93,27 +136,28 @@
         <option value="$PROJECT_DIR$/src/main/resources/log4j.properties" />
         <option value="$PROJECT_DIR$/log/log.log" />
         <option value="$PROJECT_DIR$/src/main/java/com/epam/geometry/io/DataReader.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/epam/geometry/valid/InputDataValidatorTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/epam/geometry/valid/ParserValidator.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/epam/geometry/valid/ParserValidator.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/epam/geometry/valid/ParserPyramidParametrs.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/epam/geometry/valid/ParserPyramidParameters.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/epam/geometry/action/pyramid/PyramidLogicTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/epam/geometry/valid/ParserValidatorTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/epam/geometry/creator/PyramidCreatorTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/epam/geometry/exception/parameters/ParametersNotValidException.java" />
         <option value="$PROJECT_DIR$/data/text.txt" />
         <option value="$PROJECT_DIR$/src/test/resources/test.txt" />
-        <option value="$PROJECT_DIR$/src/test/java/com/epam/geometry/director/DirectorTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/epam/geometry/action/impl/ShapeLogic.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/epam/geometry/valid/InputDataValidator.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/epam/geometry/valid/impl/Validator.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/epam/geometry/director/Director.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/epam/geometry/valid/ParametersPyramidValidator.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/epam/geometry/creator/PyramidCreator.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/epam/geometry/action/pyramid/PyramidLogic.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/epam/geometry/entity/shape/pyramid/Pyramid.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/epam/geometry/entity/point/Point.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/epam/geometry/director/Director.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/epam/geometry/director/DirectorTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/epam/geometry/valid/InputDataValidatorTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/epam/geometry/creator/PyramidCreatorTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/epam/geometry/creator/PyramidCreator.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/epam/geometry/action/pyramid/PyramidLogic.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/test/java/com/epam/geometry/action/pyramid/PyramidLogicTest.java" />
       </list>
     </option>
   </component>
@@ -137,7 +181,6 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="CatdeaLogs" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -180,6 +223,15 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="geometry" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FirstTask" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FirstTask" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="geometry" type="462c0819:PsiDirectoryNode" />
+              <item name="pyramid" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="FirstTask" type="b2602c69:ProjectViewProjectNode" />
@@ -246,16 +298,6 @@
               <item name="geometry" type="462c0819:PsiDirectoryNode" />
               <item name="exception" type="462c0819:PsiDirectoryNode" />
               <item name="file" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FirstTask" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FirstTask" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="geometry" type="462c0819:PsiDirectoryNode" />
-              <item name="exception" type="462c0819:PsiDirectoryNode" />
-              <item name="parameters" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="FirstTask" type="b2602c69:ProjectViewProjectNode" />
@@ -360,6 +402,7 @@
         </subPane>
       </pane>
       <pane id="PackagesPane" />
+      <pane id="CatdeaLogs" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -397,7 +440,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.PyramidCreatorTest.testCreatePyramidShouldReturnExpectedException">
+  <component name="RunManager" selected="JUnit.PyramidLogicTest">
     <configuration name="PyramidCreatorTest (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="FirstTask" />
       <extension name="coverage">
@@ -413,23 +456,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PyramidCreatorTest.createNewPyramid" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="geometry" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.epam.geometry.creator.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.epam.geometry.creator" />
-      <option name="MAIN_CLASS_NAME" value="com.epam.geometry.creator.PyramidCreatorTest" />
-      <option name="METHOD_NAME" value="createNewPyramid" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="PyramidCreatorTest.testCreatePyramidShouldReturnExpectedException" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="PyramidCreatorTest.testCreatePyramid" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="FirstTask" />
       <extension name="coverage">
         <pattern>
@@ -439,7 +466,23 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.epam.geometry.creator" />
       <option name="MAIN_CLASS_NAME" value="com.epam.geometry.creator.PyramidCreatorTest" />
-      <option name="METHOD_NAME" value="testCreatePyramidShouldReturnExpectedException" />
+      <option name="METHOD_NAME" value="testCreatePyramid" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PyramidCreatorTest.testCreatePyramidShouldReturnNull" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="FirstTask" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.epam.geometry.creator.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.epam.geometry.creator" />
+      <option name="MAIN_CLASS_NAME" value="com.epam.geometry.creator.PyramidCreatorTest" />
+      <option name="METHOD_NAME" value="testCreatePyramidShouldReturnNull" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -460,7 +503,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PyramidLogicTest.testCalculateRationVolumeShouldReturnExpectedRatio" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="PyramidLogicTest.testBeOnCoordinatePlane" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="FirstTask" />
       <extension name="coverage">
         <pattern>
@@ -470,26 +513,26 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.epam.geometry.action.pyramid" />
       <option name="MAIN_CLASS_NAME" value="com.epam.geometry.action.pyramid.PyramidLogicTest" />
-      <option name="METHOD_NAME" value="testCalculateRationVolumeShouldReturnExpectedRatio" />
+      <option name="METHOD_NAME" value="testBeOnCoordinatePlane" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.PyramidCreatorTest.createNewPyramid" />
-      <item itemvalue="JUnit.PyramidLogicTest.testCalculateRationVolumeShouldReturnExpectedRatio" />
-      <item itemvalue="JUnit.PyramidLogicTest" />
       <item itemvalue="JUnit.PyramidCreatorTest (1)" />
-      <item itemvalue="JUnit.PyramidCreatorTest.testCreatePyramidShouldReturnExpectedException" />
+      <item itemvalue="JUnit.PyramidCreatorTest.testCreatePyramid" />
+      <item itemvalue="JUnit.PyramidCreatorTest.testCreatePyramidShouldReturnNull" />
+      <item itemvalue="JUnit.PyramidLogicTest.testBeOnCoordinatePlane" />
+      <item itemvalue="JUnit.PyramidLogicTest" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.PyramidCreatorTest.testCreatePyramidShouldReturnExpectedException" />
-        <item itemvalue="JUnit.PyramidCreatorTest (1)" />
         <item itemvalue="JUnit.PyramidLogicTest" />
-        <item itemvalue="JUnit.PyramidLogicTest.testCalculateRationVolumeShouldReturnExpectedRatio" />
-        <item itemvalue="JUnit.PyramidCreatorTest.createNewPyramid" />
+        <item itemvalue="JUnit.PyramidLogicTest.testBeOnCoordinatePlane" />
+        <item itemvalue="JUnit.PyramidCreatorTest (1)" />
+        <item itemvalue="JUnit.PyramidCreatorTest.testCreatePyramidShouldReturnNull" />
+        <item itemvalue="JUnit.PyramidCreatorTest.testCreatePyramid" />
       </list>
     </recent_temporary>
   </component>
@@ -517,6 +560,7 @@
       <workItem from="1563360573437" duration="577000" />
       <workItem from="1563376497251" duration="4907000" />
       <workItem from="1563433272096" duration="95000" />
+      <workItem from="1563438492404" duration="4645000" />
     </task>
     <task id="LOCAL-00001" summary="*">
       <created>1562488760847</created>
@@ -623,48 +667,56 @@
       <option name="project" value="LOCAL" />
       <updated>1563301884535</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="*">
+      <created>1563438693723</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1563438693723</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ParserValidatorTest - 2019.07.13 at 21h 49m 25s.xml">
-      <configuration name="ParserValidatorTest" configurationId="JUnit" />
+    <history-entry file="PyramidLogicTest_testBeOnCoordinatePlane - 2019.07.18 at 13h 05m 28s.xml">
+      <configuration name="PyramidLogicTest.testBeOnCoordinatePlane" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="PyramidCreatorTest - 2019.07.14 at 10h 12m 42s.xml">
-      <configuration name="PyramidCreatorTest" configurationId="JUnit" />
+    <history-entry file="PyramidLogicTest_testBeOnCoordinatePlane - 2019.07.18 at 13h 05m 37s.xml">
+      <configuration name="PyramidLogicTest.testBeOnCoordinatePlane" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="PyramidCreatorTest - 2019.07.14 at 10h 12m 56s.xml">
-      <configuration name="PyramidCreatorTest" configurationId="JUnit" />
+    <history-entry file="PyramidLogicTest_testBeOnCoordinatePlane - 2019.07.18 at 13h 05m 48s.xml">
+      <configuration name="PyramidLogicTest.testBeOnCoordinatePlane" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="PyramidCreatorTest - 2019.07.14 at 10h 13m 17s.xml">
-      <configuration name="PyramidCreatorTest" configurationId="JUnit" />
+    <history-entry file="PyramidLogicTest_testBeOnCoordinatePlane - 2019.07.18 at 13h 05m 56s.xml">
+      <configuration name="PyramidLogicTest.testBeOnCoordinatePlane" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="PyramidLogicTest_testCalculateRationVolumeShouldReturnExpectedRatio - 2019.07.16 at 20h 37m 34s.xml">
-      <configuration name="PyramidLogicTest.testCalculateRationVolumeShouldReturnExpectedRatio" configurationId="JUnit" />
+    <history-entry file="PyramidLogicTest_testBeOnCoordinatePlane - 2019.07.18 at 13h 06m 03s.xml">
+      <configuration name="PyramidLogicTest.testBeOnCoordinatePlane" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="PyramidLogicTest_testCalculateRationVolumeShouldReturnExpectedRatio - 2019.07.16 at 20h 37m 55s.xml">
-      <configuration name="PyramidLogicTest.testCalculateRationVolumeShouldReturnExpectedRatio" configurationId="JUnit" />
+    <history-entry file="PyramidLogicTest_testBeOnCoordinatePlane - 2019.07.18 at 13h 06m 10s.xml">
+      <configuration name="PyramidLogicTest.testBeOnCoordinatePlane" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="PyramidLogicTest_testCalculateRationVolumeShouldReturnExpectedRatio - 2019.07.16 at 20h 38m 13s.xml">
-      <configuration name="PyramidLogicTest.testCalculateRationVolumeShouldReturnExpectedRatio" configurationId="JUnit" />
+    <history-entry file="PyramidLogicTest_testBeOnCoordinatePlane - 2019.07.18 at 13h 09m 27s.xml">
+      <configuration name="PyramidLogicTest.testBeOnCoordinatePlane" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="PyramidLogicTest - 2019.07.16 at 21h 01m 30s.xml">
+    <history-entry file="PyramidLogicTest_testBeOnCoordinatePlane - 2019.07.18 at 13h 09m 35s.xml">
+      <configuration name="PyramidLogicTest.testBeOnCoordinatePlane" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="PyramidLogicTest_testBeOnCoordinatePlane - 2019.07.18 at 13h 09m 42s.xml">
+      <configuration name="PyramidLogicTest.testBeOnCoordinatePlane" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="PyramidLogicTest - 2019.07.18 at 13h 18m 48s.xml">
       <configuration name="PyramidLogicTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="PyramidCreatorTest_(1) - 2019.07.16 at 21h 05m 24s.xml">
-      <configuration name="PyramidCreatorTest (1)" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="PyramidCreatorTest_testCreatePyramidShouldReturnExpectedException - 2019.07.16 at 21h 09m 35s.xml">
-      <configuration name="PyramidCreatorTest.testCreatePyramidShouldReturnExpectedException" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="64769000" />
+    <option name="totallyTimeSpent" value="69414000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="916" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.30655527" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.3104113" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -673,9 +725,9 @@
       <window_info id="Learn" order="6" />
       <window_info id="Favorites" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32843137" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32822478" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32822478" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39869282" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39846742" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -797,40 +849,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/epam/geometry/action/pyramid/PyramidLogicTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-149">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/epam/geometry/creator/PyramidCreatorTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/epam/geometry/io/DataReaderTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/epam/geometry/valid/InputDataValidatorTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="19" column="48" selection-start-line="19" selection-start-column="48" selection-end-line="19" selection-end-column="48" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -847,16 +869,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
           <caret line="3" column="9" selection-start-line="3" selection-start-column="9" selection-end-line="3" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/epam/geometry/director/DirectorTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="28" selection-start-line="28" selection-end-line="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -878,35 +890,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="4" column="9" selection-start-line="4" selection-start-column="9" selection-end-line="4" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/epam/geometry/valid/ParametersPyramidValidator.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/epam/geometry/creator/PyramidCreator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="419">
-          <caret line="33" column="9" lean-forward="true" selection-start-line="33" selection-start-column="9" selection-end-line="33" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/epam/geometry/action/pyramid/PyramidLogic.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="29" column="82" selection-start-line="29" selection-start-column="82" selection-end-line="29" selection-end-column="82" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#3447#3448#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/epam/geometry/director/Director.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-65">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
         </state>
       </provider>
     </entry>
@@ -951,10 +934,87 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/epam/geometry/valid/ParametersPyramidValidator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/epam/geometry/director/Director.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="463">
+          <caret line="36" column="22" selection-start-line="36" selection-start-column="22" selection-end-line="36" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/epam/geometry/valid/InputDataValidatorTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-336">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/epam/geometry/director/DirectorTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="50" selection-start-line="4" selection-start-column="50" selection-end-line="4" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/epam/geometry/creator/PyramidCreatorTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="599">
+          <caret line="48" column="5" selection-start-line="48" selection-start-column="5" selection-end-line="48" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#616#617#0" expanded="true" />
+            <element signature="e#662#663#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/epam/geometry/creator/PyramidCreator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="548">
+          <caret line="33" column="9" selection-start-line="33" selection-start-column="9" selection-end-line="33" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/epam/geometry/action/pyramid/PyramidLogic.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="429">
+          <caret line="57" column="24" selection-start-line="57" selection-start-column="24" selection-end-line="57" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#3996#3997#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="122">
-          <caret line="17" column="32" selection-start-line="17" selection-start-column="32" selection-end-line="17" selection-end-column="32" />
+        <state relative-caret-position="513">
+          <caret line="40" column="21" selection-start-line="40" selection-start-column="21" selection-end-line="40" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/epam/geometry/action/pyramid/PyramidLogicTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="582">
+          <caret line="80" column="32" selection-start-line="80" selection-start-column="32" selection-end-line="80" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

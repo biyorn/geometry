@@ -6,6 +6,9 @@ import com.epam.geometry.entity.shape.pyramid.Pyramid;
 public class PyramidLogic {
 
     private static final int FOUR_SIDED_PYRAMID = 4;
+    private static final char COORDINATE_X = 'X';
+    private static final char COORDINATE_Y = 'Y';
+    private static final char COORDINATE_Z = 'Z';
 
     public double calculateSquare(Pyramid pyramid) {
         double baseEdgeLength = pyramid.getBaseEdgeLength();
@@ -42,10 +45,19 @@ public class PyramidLogic {
         return firstPart / secondPart;
     }
 
-    public boolean isOn(Pyramid pyramid) {
-
-
-        return false;
+    public boolean beOnCoordinatePlane(Pyramid pyramid, char plane) {
+        Point point = pyramid.getPoint();
+        char coordinate = Character.toUpperCase(plane);
+        switch (coordinate) {
+            case COORDINATE_X:
+                return point.getX() == 0;
+            case COORDINATE_Y:
+                return point.getY() == 0;
+            case COORDINATE_Z:
+                return point.getZ() == 0;
+                default:
+                    return false;
+        }
     }
 
     private double calculateSimilarityCoefficient(Pyramid pyramid, Point point, double coordinatePointY) {
