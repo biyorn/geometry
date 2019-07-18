@@ -3,6 +3,7 @@ package com.epam.geometry.creator;
 import com.epam.geometry.entity.point.Point;
 import com.epam.geometry.entity.shape.pyramid.Pyramid;
 import com.epam.geometry.exception.parameters.ParametersNotValidException;
+import com.epam.geometry.valid.ParametersPyramidValidator;
 
 public class PyramidCreator {
 
@@ -11,7 +12,6 @@ public class PyramidCreator {
     private static final int LOCATION_Z = 2;
     private static final int LENGTH_RIB = 3;
     private static final int LENGTH_EDGE = 4;
-    private static final int NEGATIVE = 0;
     private static final String SEPARATION = "\\s";
 
     public Pyramid createPyramid(String line) throws ParametersNotValidException {
@@ -25,16 +25,14 @@ public class PyramidCreator {
         double baseEdgeLength = Double.parseDouble(options[LENGTH_EDGE]);
 
         Pyramid pyramid;
-        if(positiveNumberValid(sideRibLength, baseEdgeLength)) {
+        ParametersPyramidValidator validator = new ParametersPyramidValidator();
+        if(validator.isPyramid(sideRibLength, baseEdgeLength)) {
             pyramid = new Pyramid(point, sideRibLength, baseEdgeLength);
         } else {
+            // optional instead exception
             throw new ParametersNotValidException();
         }
 
         return pyramid;
-    }
-
-    private boolean positiveNumberValid(double first, double second) {
-        return first > NEGATIVE && second > NEGATIVE;
     }
 }

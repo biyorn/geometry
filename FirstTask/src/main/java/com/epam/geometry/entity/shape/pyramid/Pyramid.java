@@ -18,12 +18,24 @@ public class Pyramid {
         return point;
     }
 
+    public void setPoint(Point point) {
+        this.point = point;
+    }
+
     public double getSideRibLength() {
         return sideRibLength;
     }
 
+    public void setSideRibLength(double sideRibLength) {
+        this.sideRibLength = sideRibLength;
+    }
+
     public double getBaseEdgeLength() {
         return baseEdgeLength;
+    }
+
+    public void setBaseEdgeLength(double baseEdgeLength) {
+        this.baseEdgeLength = baseEdgeLength;
     }
 
     @Override

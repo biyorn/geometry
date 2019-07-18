@@ -2,17 +2,11 @@ package com.epam.geometry.action.pyramid;
 
 import com.epam.geometry.entity.point.Point;
 import com.epam.geometry.entity.shape.pyramid.Pyramid;
-import com.epam.geometry.action.impl.ShapeLogic;
 
-import java.nio.channels.Pipe;
-import java.security.PublicKey;
-import java.util.Objects;
-
-public class PyramidLogic implements ShapeLogic {
+public class PyramidLogic {
 
     private static final int FOUR_SIDED_PYRAMID = 4;
 
-    @Override
     public double calculateSquare(Pyramid pyramid) {
         double baseEdgeLength = pyramid.getBaseEdgeLength();
         double sideRibLength = pyramid.getSideRibLength();
@@ -22,7 +16,6 @@ public class PyramidLogic implements ShapeLogic {
         return baseSquare + FOUR_SIDED_PYRAMID * sideSquare;
     }
 
-    @Override
     public double calculateVolume(Pyramid pyramid) {
         double baseEdgeLength = pyramid.getBaseEdgeLength();
         double sideRibLength = pyramid.getSideRibLength();
@@ -34,9 +27,7 @@ public class PyramidLogic implements ShapeLogic {
         return (height * quadrateSquare) / 3;
     }
 
-    @Override
     public double calculateRatioVolume(Pyramid pyramid, double coordinatePointY) {
-        // Check is possible
         Point point = pyramid.getPoint();
         double z = point.getZ();
         double x = point.getX();
@@ -51,13 +42,10 @@ public class PyramidLogic implements ShapeLogic {
         return firstPart / secondPart;
     }
 
-    // may be incorrect
-    public boolean isPyramid(Object obj) {
-        Pyramid pyramid = new Pyramid(new Point(0, 0, 0), 10, 10);
-        if(pyramid == obj) {
-            return true;
-        }
-        return obj != null && pyramid.getClass() == obj.getClass();
+    public boolean isOn(Pyramid pyramid) {
+
+
+        return false;
     }
 
     private double calculateSimilarityCoefficient(Pyramid pyramid, Point point, double coordinatePointY) {

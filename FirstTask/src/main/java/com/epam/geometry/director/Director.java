@@ -4,7 +4,7 @@ import com.epam.geometry.creator.PyramidCreator;
 import com.epam.geometry.entity.shape.pyramid.Pyramid;
 import com.epam.geometry.exception.DataMissingException;
 import com.epam.geometry.io.DataReader;
-import com.epam.geometry.valid.impl.Validator;
+import com.epam.geometry.valid.InputDataValidator;
 import org.apache.log4j.Logger;
 
 import java.util.ArrayList;
@@ -15,16 +15,16 @@ public class Director {
     private static final Logger LOGGER = Logger.getLogger(Director.class);
 
     private DataReader reader;
-    private Validator valid;
+    private InputDataValidator valid;
     private PyramidCreator creator;
 
-    public Director(DataReader reader, Validator valid, PyramidCreator creator) {
+    public Director(DataReader reader, InputDataValidator valid, PyramidCreator creator) {
         this.reader = reader;
         this.valid = valid;
         this.creator = creator;
     }
 
-    public void process(String path) {
+    public List<Pyramid> process(String path) {
         LOGGER.info("START PROGRAM");
         List<String> invalidList;
         List<Pyramid> validList = new ArrayList<>();
@@ -41,5 +41,6 @@ public class Director {
             LOGGER.error(e.getMessage(), e);
         }
         LOGGER.info("STOP PROGRAM");
+        return validList;
     }
 }
