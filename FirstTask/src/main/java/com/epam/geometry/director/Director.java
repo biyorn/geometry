@@ -9,6 +9,7 @@ import org.apache.log4j.Logger;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 
 public class Director {
 
@@ -33,8 +34,8 @@ public class Director {
             invalidList = reader.read(path);
             for (String line : invalidList) {
                 if(valid.isValid(line)) {
-                    //Pyramid pyramid = creator.createPyramid(line);
-                    //validList.add(pyramid);
+                    Optional<Pyramid> pyramid = creator.createPyramid(line);
+                    pyramid.ifPresent(validList::add);
                 }
             }
         } catch (DataMissingException e) {
