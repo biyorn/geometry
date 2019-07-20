@@ -27,6 +27,7 @@ public class PyramidCreatorTest {
         Optional<Pyramid> actual = creator.createPyramid(VALID_DATA);
 
         // then
+        Assert.assertTrue(actual.isPresent());
         Assert.assertEquals(EXPECTED, actual);
     }
 
