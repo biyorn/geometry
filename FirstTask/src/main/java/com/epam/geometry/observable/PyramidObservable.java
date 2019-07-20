@@ -11,7 +11,7 @@ import java.util.List;
 public class PyramidObservable extends Pyramid {
 
     private static final IDGenerator generator = IDGenerator.getInstance();
-    private static final String ID = generator.getID();
+    private final String ID = generator.getID();
     private List<Observer> observerList = new ArrayList<>();
 
     public PyramidObservable(Point point, double sideRibLength, double baseEdgeLength) {
