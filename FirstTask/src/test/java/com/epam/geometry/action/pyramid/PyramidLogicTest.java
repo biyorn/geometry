@@ -2,10 +2,16 @@ package com.epam.geometry.action.pyramid;
 
 import com.epam.geometry.entity.point.Point;
 import com.epam.geometry.entity.shape.pyramid.Pyramid;
-import org.junit.Assert;
+import com.tngtech.java.junit.dataprovider.DataProvider;
+import com.tngtech.java.junit.dataprovider.DataProviderRunner;
+import com.tngtech.java.junit.dataprovider.UseDataProvider;
 import org.junit.Before;
 import org.junit.Test;
+import org.junit.runner.RunWith;
 
+import static org.junit.Assert.*;
+
+@RunWith(DataProviderRunner.class)
 public class PyramidLogicTest {
 
     private static final double DELTA = 0.001;
@@ -15,7 +21,7 @@ public class PyramidLogicTest {
     private static final double TARGET_COORDINATE = 5;
     private PyramidLogic logic;
     private Pyramid pyramid;
-    private Pyramid pyramidForCoordinateTest;
+    private static Pyramid pyramidForCoordinateTest;
 
     @Before
     public void init() {
@@ -26,13 +32,34 @@ public class PyramidLogicTest {
         pyramidForCoordinateTest = new Pyramid(pointForCoordinateTest, 5, 5);
     }
 
+    @DataProvider
+    public static Object[][] dataProviderRightCoordinate() {
+        return new Object[][]{
+                {'x'},
+                {'y'},
+                {'z'},
+                {'X'},
+                {'Y'},
+                {'z'}
+        };
+    }
+
+    @DataProvider
+    public static Object[][] dataProviderWrongCoordinate() {
+        return new Object[][] {
+                {'a'},
+                {'b'},
+                {'c'}
+        };
+    }
+
     @Test
     public void calculateSquareTestMethodShouldReturnExpectedSquare() {
         // when
         double actual = logic.calculateSquare(pyramid);
 
         // then
-        Assert.assertEquals(EXPECTED_SQUARE, actual, DELTA);
+        assertEquals(EXPECTED_SQUARE, actual, DELTA);
     }
 
     @Test
@@ -41,7 +68,7 @@ public class PyramidLogicTest {
         double actual = logic.calculateVolume(pyramid);
 
         // then
-        Assert.assertEquals(EXPECTED_VOLUME, actual, DELTA);
+        assertEquals(EXPECTED_VOLUME, actual, DELTA);
 
     }
 
@@ -51,33 +78,26 @@ public class PyramidLogicTest {
         double actual = logic.calculateRatioVolume(pyramid, TARGET_COORDINATE);
 
         // then
-        Assert.assertEquals(EXPECTED_RATIO, actual, DELTA);
+        assertEquals(EXPECTED_RATIO, actual, DELTA);
     }
 
     @Test
-    public void testBeOnCoordinatePlaneShouldReturnTrueWhenCoordinateX() {
+    @UseDataProvider("dataProviderRightCoordinate")
+    public void testBeOnCoordinatePlaneShouldReturnTrueWhenRightCoordinateSupplied(char parameter) {
         // when
-        boolean actual = logic.beOnCoordinatePlane(pyramidForCoordinateTest, 'X');
+        boolean actual = logic.beOnCoordinatePlane(pyramidForCoordinateTest, parameter);
 
         // then
-        Assert.assertTrue(actual);
+        assertTrue(actual);
     }
 
     @Test
-    public void testBeOnCoordinatePlaneShouldReturnTrueWhenCoordinateY() {
+    @UseDataProvider("dataProviderWrongCoordinate")
+    public void testBeOnCoordinatePlaneShouldReturnFalseWhenWrongCoordinateSupplied(char parameter) {
         // when
-        boolean actual = logic.beOnCoordinatePlane(pyramidForCoordinateTest, 'Y');
+        boolean actual = logic.beOnCoordinatePlane(pyramidForCoordinateTest, parameter);
 
         // then
-        Assert.assertTrue(actual);
-    }
-
-    @Test
-    public void testBeOnCoordinatePlaneShouldReturnTrueWhenCoordinateZ() {
-        // when
-        boolean actual = logic.beOnCoordinatePlane(pyramidForCoordinateTest, 'Z');
-
-        // then
-        Assert.assertTrue(actual);
+        assertFalse(actual);
     }
 }

@@ -2,7 +2,6 @@ package com.epam.geometry.observable;
 
 import com.epam.geometry.entity.point.Point;
 import com.epam.geometry.entity.shape.pyramid.Pyramid;
-import com.epam.geometry.generator.IDGenerator;
 import com.epam.geometry.observer.impl.Observer;
 
 import java.util.ArrayList;
@@ -10,12 +9,12 @@ import java.util.List;
 
 public class PyramidObservable extends Pyramid {
 
-    private static final IDGenerator generator = IDGenerator.getInstance();
-    private final String ID = generator.getID();
+    private String id;
     private List<Observer> observerList = new ArrayList<>();
 
-    public PyramidObservable(Point point, double sideRibLength, double baseEdgeLength) {
+    public PyramidObservable(Point point, double sideRibLength, double baseEdgeLength, String id) {
         super(point, sideRibLength, baseEdgeLength);
+        this.id = id;
     }
 
     @Override
@@ -37,13 +36,15 @@ public class PyramidObservable extends Pyramid {
     }
 
     public String getID() {
-        return ID;
+        return id;
     }
 
     public void attach(Observer observer){
-        if(observer != null) {
-            observerList.add(observer);
-        }
+        observerList.add(observer);
+    }
+
+    public void detach(Observer observer) {
+        observerList.remove(observer);
     }
 
     private void notifyAllObservers() {

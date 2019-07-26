@@ -4,7 +4,7 @@ import java.util.UUID;
 
 public class IDGenerator {
 
-    private static final IDGenerator instance = new IDGenerator();
+    private static IDGenerator instance;
 
     private IDGenerator() {}
 
@@ -14,6 +14,9 @@ public class IDGenerator {
     }
 
     public static IDGenerator getInstance() {
+        if(instance == null) {
+            instance = new IDGenerator();
+        }
         return instance;
     }
 }

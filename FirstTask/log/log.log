@@ -364,3 +364,200 @@ com.epam.geometry.exception.file.PathToFileIsWrongException: Path is wrong
 2019-07-19 15:37:10 INFO  Director:29 - START PROGRAM
 2019-07-19 15:37:10 INFO  Director:44 - STOP PROGRAM
 2019-07-19 15:37:20 ERROR DataReader:19 - Error, the path to file is null
+2019-07-22 16:03:07 INFO  Director:29 - START PROGRAM
+2019-07-22 16:03:07 INFO  Director:44 - STOP PROGRAM
+2019-07-22 16:03:44 INFO  Director:29 - START PROGRAM
+2019-07-22 16:03:44 INFO  Director:44 - STOP PROGRAM
+2019-07-22 16:08:20 INFO  Director:29 - START PROGRAM
+2019-07-22 16:08:20 INFO  Director:44 - STOP PROGRAM
+2019-07-22 16:09:16 INFO  Director:29 - START PROGRAM
+2019-07-22 16:09:16 INFO  Director:44 - STOP PROGRAM
+2019-07-22 16:09:32 INFO  Director:29 - START PROGRAM
+2019-07-22 16:09:32 INFO  Director:44 - STOP PROGRAM
+2019-07-24 23:44:18 INFO  Director:29 - START PROGRAM
+2019-07-24 23:44:18 INFO  Director:44 - STOP PROGRAM
+2019-07-24 23:44:18 ERROR DataReader:19 - Error, the path to file is null
+2019-07-24 23:48:01 INFO  Director:29 - START PROGRAM
+2019-07-24 23:48:01 INFO  Director:44 - STOP PROGRAM
+2019-07-24 23:48:11 INFO  Director:29 - START PROGRAM
+2019-07-24 23:48:11 INFO  Director:44 - STOP PROGRAM
+2019-07-24 23:48:11 ERROR DataReader:19 - Error, the path to file is null
+2019-07-24 23:48:27 INFO  Director:29 - START PROGRAM
+2019-07-24 23:48:27 INFO  Director:44 - STOP PROGRAM
+2019-07-24 23:48:59 INFO  Director:29 - START PROGRAM
+2019-07-24 23:48:59 INFO  Director:44 - STOP PROGRAM
+2019-07-24 23:50:35 INFO  Director:29 - START PROGRAM
+2019-07-24 23:50:35 INFO  Director:44 - STOP PROGRAM
+2019-07-24 23:52:09 INFO  Director:29 - START PROGRAM
+2019-07-24 23:52:09 INFO  Director:44 - STOP PROGRAM
+2019-07-24 23:52:42 INFO  Director:29 - START PROGRAM
+2019-07-24 23:52:43 INFO  Director:44 - STOP PROGRAM
+2019-07-24 23:53:06 INFO  Director:29 - START PROGRAM
+2019-07-24 23:53:06 INFO  Director:44 - STOP PROGRAM
+2019-07-24 23:53:19 INFO  Director:29 - START PROGRAM
+2019-07-24 23:53:19 INFO  Director:44 - STOP PROGRAM
+2019-07-25 00:12:32 INFO  Director:29 - START PROGRAM
+2019-07-25 00:12:32 INFO  Director:44 - STOP PROGRAM
+2019-07-25 00:12:54 INFO  Director:29 - START PROGRAM
+2019-07-25 00:12:54 INFO  Director:44 - STOP PROGRAM
+2019-07-25 00:15:03 INFO  Director:29 - START PROGRAM
+2019-07-25 00:15:03 INFO  Director:44 - STOP PROGRAM
+2019-07-25 17:13:57 INFO  Director:29 - START PROGRAM
+2019-07-25 17:13:57 INFO  Director:44 - STOP PROGRAM
+2019-07-25 17:16:17 INFO  Director:29 - START PROGRAM
+2019-07-25 17:16:17 INFO  Director:44 - STOP PROGRAM
+2019-07-25 17:39:21 INFO  Director:29 - START PROGRAM
+2019-07-25 17:39:21 ERROR Director:42 - 
+com.epam.geometry.exception.file.FileNotReadException
+	at com.epam.geometry.director.Director.process(Director.java:34)
+	at com.epam.geometry.director.DirectorTest.testProcessShouldReturnEmptyListWhenInvalidPathSupplied(DirectorTest.java:88)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68)
+	at com.intellij.rt.execution.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:47)
+	at com.intellij.rt.execution.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:242)
+	at com.intellij.rt.execution.junit.JUnitStarter.main(JUnitStarter.java:70)
+2019-07-25 17:39:21 INFO  Director:44 - STOP PROGRAM
+2019-07-25 17:39:35 INFO  Director:29 - START PROGRAM
+2019-07-25 17:39:35 ERROR Director:42 - 
+com.epam.geometry.exception.file.FileNotReadException
+	at com.epam.geometry.director.Director.process(Director.java:34)
+	at com.epam.geometry.director.DirectorTest.testProcessShouldReturnEmptyListWhenInvalidPathSupplied(DirectorTest.java:88)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68)
+	at com.intellij.rt.execution.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:47)
+	at com.intellij.rt.execution.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:242)
+	at com.intellij.rt.execution.junit.JUnitStarter.main(JUnitStarter.java:70)
+2019-07-25 17:39:35 INFO  Director:44 - STOP PROGRAM
+2019-07-25 17:40:36 ERROR DataReader:19 - Error, the path to file is null
+2019-07-25 17:46:21 INFO  Director:29 - START PROGRAM
+2019-07-25 17:46:21 ERROR Director:42 - 
+com.epam.geometry.exception.file.FileNotReadException
+	at com.epam.geometry.director.Director.process(Director.java:34)
+	at com.epam.geometry.director.DirectorTest.testProcessShouldReturnEmptyListWhenInvalidPathSupplied(DirectorTest.java:88)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68)
+	at com.intellij.rt.execution.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:47)
+	at com.intellij.rt.execution.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:242)
+	at com.intellij.rt.execution.junit.JUnitStarter.main(JUnitStarter.java:70)
+2019-07-25 17:46:21 INFO  Director:44 - STOP PROGRAM
+2019-07-25 17:46:21 INFO  Director:29 - START PROGRAM
+2019-07-25 17:46:21 INFO  Director:44 - STOP PROGRAM
+2019-07-25 17:46:28 ERROR DataReader:19 - Error, the path to file is null
+2019-07-26 23:31:07 INFO  Director:29 - START PROGRAM
+2019-07-26 23:31:07 ERROR Director:42 - 
+com.epam.geometry.exception.file.FileNotReadException
+	at com.epam.geometry.director.Director.process(Director.java:34)
+	at com.epam.geometry.director.DirectorTest.testProcessShouldReturnEmptyListWhenInvalidPathSupplied(DirectorTest.java:88)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68)
+	at com.intellij.rt.execution.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:47)
+	at com.intellij.rt.execution.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:242)
+	at com.intellij.rt.execution.junit.JUnitStarter.main(JUnitStarter.java:70)
+2019-07-26 23:31:07 INFO  Director:44 - STOP PROGRAM
+2019-07-26 23:31:07 INFO  Director:29 - START PROGRAM
+2019-07-26 23:31:07 INFO  Director:44 - STOP PROGRAM
+2019-07-26 23:31:16 ERROR DataReader:19 - Error, the path to file is null
+2019-07-27 00:01:38 INFO  Director:29 - START PROGRAM
+2019-07-27 00:01:38 ERROR Director:42 - 
+com.epam.geometry.exception.file.FileNotReadException
+	at com.epam.geometry.director.Director.process(Director.java:34)
+	at com.epam.geometry.director.DirectorTest.testProcessShouldReturnEmptyListWhenInvalidPathSupplied(DirectorTest.java:88)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68)
+	at com.intellij.rt.execution.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:47)
+	at com.intellij.rt.execution.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:242)
+	at com.intellij.rt.execution.junit.JUnitStarter.main(JUnitStarter.java:70)
+2019-07-27 00:01:38 INFO  Director:44 - STOP PROGRAM
+2019-07-27 00:01:38 INFO  Director:29 - START PROGRAM
+2019-07-27 00:01:38 INFO  Director:44 - STOP PROGRAM
+2019-07-27 00:01:45 ERROR DataReader:19 - Error, the path to file is null

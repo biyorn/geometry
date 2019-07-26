@@ -14,6 +14,11 @@ public class PyramidCreator {
     private static final int LENGTH_RIB = 3;
     private static final int LENGTH_EDGE = 4;
     private static final String SEPARATION = "\\s";
+    private ParametersPyramidValidator validator;
+
+    public PyramidCreator(ParametersPyramidValidator validator) {
+        this.validator = validator;
+    }
 
     public Optional<Pyramid> createPyramid(String line) {
         String[] options = line.split(SEPARATION);
@@ -26,7 +31,6 @@ public class PyramidCreator {
         double baseEdge = Double.parseDouble(options[LENGTH_EDGE]);
 
         Optional<Pyramid> pyramid;
-        ParametersPyramidValidator validator = new ParametersPyramidValidator();
         if(validator.isPyramid(sideRib, baseEdge)) {
             pyramid = Optional.of(new Pyramid(point, sideRib, baseEdge));
         } else {

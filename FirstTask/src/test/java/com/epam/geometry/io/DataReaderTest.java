@@ -52,5 +52,4 @@ public class DataReaderTest {
         // when
         List<String> list = reader.read(WRONG_PATH);
     }
-
 }
