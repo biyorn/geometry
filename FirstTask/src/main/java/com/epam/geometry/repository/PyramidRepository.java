@@ -9,46 +9,42 @@ import java.util.stream.Collectors;
 
 public class PyramidRepository implements Repository {
 
-    private Map<String, PyramidObservable> repository;
+    private List<PyramidObservable> repository;
 
     public PyramidRepository() {
-        repository = new HashMap<>();
+        repository = new ArrayList<>();
     }
 
     @Override
     public void add(PyramidObservable pyramid) {
-        if(pyramid != null) {
-            String id = pyramid.getID();
-            repository.put(id, pyramid);
-        }
+        repository.add(pyramid);
     }
 
     @Override
     public void remove(PyramidObservable pyramid) {
-        String id = pyramid.getID();
-        repository.remove(id);
+        repository.remove(pyramid);
     }
 
     @Override
     public void update(PyramidObservable pyramid) {
         String id = pyramid.getID();
-        for (Map.Entry element : repository.entrySet()) {
-            String intermediate = (String) element.getKey();
+        for (PyramidObservable element : repository) {
+            String intermediate = element.getID();
             if(intermediate.equals(id)) {
-                repository.put(id, pyramid);
+                int index = repository.indexOf(element);
+                repository.set(index, pyramid);
             }
         }
     }
 
     @Override
     public List<PyramidObservable> query(Specification specification) {
-        return repository.values().stream()
+        return repository.stream()
                 .filter(specification::specified)
                 .collect(Collectors.toList());
     }
 
-    // ???
     public void sort(Comparator<PyramidObservable> comparator) {
-
+        repository.sort(comparator);
     }
 }

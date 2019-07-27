@@ -24,8 +24,10 @@ public class DirectorTest {
 
     private static final String PATH = "some path";
     private static final String WRONG_PATH = "some invalid path";
-    private static final Pyramid FIRST_PYRAMID = new Pyramid(new Point(1, 2, 3), 4, 5);
-    private static final Pyramid SECOND_PYRAMID = new Pyramid(new Point(6, 7, 8), 9, 10);
+    private static final Point FIRST_POINT = new Point(1, 2, 3);
+    private static final Point SECOND_POINT = new Point(6, 7, 8);
+    private static final Pyramid FIRST_PYRAMID = new Pyramid(FIRST_POINT, 4, 5);
+    private static final Pyramid SECOND_PYRAMID = new Pyramid(SECOND_POINT, 9, 10);
 
     private static final List<Pyramid> EXPECTED = Arrays.asList(FIRST_PYRAMID, SECOND_PYRAMID);
     private static final String FIRST_PARAMETERS = "1 2 3 4 5";

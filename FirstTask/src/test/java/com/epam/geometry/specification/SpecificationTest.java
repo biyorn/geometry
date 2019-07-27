@@ -13,7 +13,6 @@ import org.junit.runner.RunWith;
 
 import static junit.framework.TestCase.*;
 
-
 @RunWith(DataProviderRunner.class)
 public class SpecificationTest {
 

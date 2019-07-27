@@ -1,11 +1,8 @@
 package com.epam.geometry.repository;
 
-import com.epam.geometry.action.pyramid.PyramidLogic;
-import com.epam.geometry.comparator.PyramidComparatorBySquare;
 import com.epam.geometry.comparator.PyramidComparatorByX;
 import com.epam.geometry.entity.point.Point;
 import com.epam.geometry.observable.PyramidObservable;
-import com.epam.geometry.observer.impl.Observer;
 import com.epam.geometry.specifiacation.impl.Specification;
 import org.junit.Before;
 import org.junit.Test;
@@ -22,17 +19,22 @@ import static org.mockito.Mockito.*;
 
 public class PyramidRepositoryTest {
 
-    private static final String ID_FOR_PYRAMID = "2f4";
-    private static final Point POINT = new Point(1, 2, 3);
+    private static final String FIRST_ID = "2f4";
+    private static final String SECOND_ID = "43f4";
+    private static final Point FIRST_POINT = new Point(1, 2, 3);
+    private static final Point SECOND_POINT = new Point(5, 4, 2);
     private static final Point UPDATE_POINT = new Point(2, 3, 4);
-    private static final PyramidObservable PYRAMID = new PyramidObservable(
-            POINT, 4, 5, ID_FOR_PYRAMID
+    private static final PyramidObservable FIRST_PYRAMID = new PyramidObservable(
+            FIRST_POINT, 4, 5, FIRST_ID
+    );
+    private static final PyramidObservable SECOND_PYRAMID = new PyramidObservable(
+            SECOND_POINT, 7, 9, SECOND_ID
     );
     private static final PyramidObservable UPDATE_PYRAMID = new PyramidObservable(
-            UPDATE_POINT, 5, 6, ID_FOR_PYRAMID
+            UPDATE_POINT, 5, 6, FIRST_ID
     );
 
-    private static final List<PyramidObservable> EXPECTED = Arrays.asList(PYRAMID);
+    private static final List<PyramidObservable> EXPECTED = Arrays.asList(FIRST_PYRAMID, SECOND_PYRAMID);
 
     private PyramidRepository repository;
     private Specification mockSpecification;
@@ -46,7 +48,7 @@ public class PyramidRepositoryTest {
     @Test
     public void testAddShouldAddObjectInList() {
         // when
-        repository.add(PYRAMID);
+        repository.add(FIRST_PYRAMID);
 
         // then
         List<PyramidObservable> actual = getCurrentListObjects();
@@ -56,10 +58,10 @@ public class PyramidRepositoryTest {
     @Test
     public void testRemoveShouldRemoveObjectFromList() {
         // given
-        repository.add(PYRAMID);
+        repository.add(FIRST_PYRAMID);
 
         // when
-        repository.remove(PYRAMID);
+        repository.remove(FIRST_PYRAMID);
 
         // then
         List<PyramidObservable> actual = getCurrentListObjects();
@@ -69,7 +71,7 @@ public class PyramidRepositoryTest {
     @Test
     public void testUpdateShouldReplaceAtNewPyramidWithSameID() {
         // given
-        repository.add(PYRAMID);
+        repository.add(FIRST_PYRAMID);
 
         // when
         repository.update(UPDATE_PYRAMID);
@@ -83,7 +85,8 @@ public class PyramidRepositoryTest {
     @Test
     public void testQueryShouldReturnListWithExpectedObjectsWhenSpecifiedTrue() {
         // given
-        repository.add(PYRAMID);
+        repository.add(FIRST_PYRAMID);
+        repository.add(SECOND_PYRAMID);
 
         when(mockSpecification.specified(anyObject())).thenReturn(true);
 
@@ -91,14 +94,14 @@ public class PyramidRepositoryTest {
         List<PyramidObservable> actual = repository.query(mockSpecification);
 
         // then
-        verify(mockSpecification, times(1)).specified(anyObject());
+        verify(mockSpecification, times(2)).specified(anyObject());
         assertThat(actual, is(EXPECTED));
     }
 
     @Test
     public void testQueryShouldReturnEmptyListWhenSpecifiedFalse() {
         // given
-        repository.add(PYRAMID);
+        repository.add(FIRST_PYRAMID);
 
         when(mockSpecification.specified(anyObject())).thenReturn(false);
 
@@ -110,17 +113,22 @@ public class PyramidRepositoryTest {
         assertTrue(actual.isEmpty());
     }
 
-//    @Test
-//    public void testSort() {
-//        // given
-//
-//        PyramidObservable observable = new PyramidObservable(UPDATE_POINT, 5, 6, "2f4");
-//        List<PyramidObservable> expected = Arrays.asList(PYRAMID);
-//        repository.add(PYRAMID);
-//        repository.add(observable);
-//
-//
-//    }
+    @Test
+    public void testSortShouldReturnExpectedListWhenPyramidComparatorByX() {
+        // given
+        PyramidObservable newPyramid = new PyramidObservable(UPDATE_POINT, 4, 5, "2f");
+        repository.add(newPyramid);
+        repository.add(FIRST_PYRAMID);
+
+        List<PyramidObservable> expected = Arrays.asList(FIRST_PYRAMID, newPyramid);
+
+        // when
+        repository.sort(new PyramidComparatorByX());
+
+        // then
+        List<PyramidObservable> actual = getCurrentListObjects();
+        assertThat(actual, is(expected));
+    }
 
     private List<PyramidObservable> getCurrentListObjects() {
         when(mockSpecification.specified(anyObject())).thenReturn(true);
